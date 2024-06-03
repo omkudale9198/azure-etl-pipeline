@@ -1,0 +1,7 @@
+{
+    "input_path": "abfss://<container>@<account_name>.dfs.core.windows.net/input/",
+    "output_path": "abfss://<container>@<account_name>.dfs.core.windows.net/output/",
+    "synapse_url": "jdbc:sqlserver://<synapse_workspace>.sql.azuresynapse.net:1433;database=<database_name>",
+    "temp_dir": "abfss://<container>@<account_name>.dfs.core.windows.net/temp/",
+    "synapse_table": "<table_name>"
+}
