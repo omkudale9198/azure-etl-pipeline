@@ -95,10 +95,12 @@ Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 ```
-License
+License : 
+
 This project is licensed under the MIT License.
 
-Contact
+Contact:
+
 If you have any questions or need further assistance, please contact omkudale9198@gmail.com
 
 
