@@ -1,3 +1,4 @@
+![image](https://github.com/omkudale9198/azure-etl-pipeline/assets/68637380/93fa332c-2d3f-4b3a-90bd-ee1f0dfa683b)
 
 ## Setup Instructions
 
