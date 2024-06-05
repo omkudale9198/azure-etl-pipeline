@@ -9,19 +9,33 @@ The Azure ETL Pipeline project demonstrates a comprehensive data pipeline using 
 
 Key Components
 1.	Azure Data Lake Storage Gen2:
-o	Stores raw data files (e.g., CSV, JSON) which are the input for the pipeline.
+    Stores raw data files (e.g., CSV, JSON) which are the input for the pipeline.
 2.	Azure Data Factory (ADF):
-o	Orchestrates and automates the data movement and transformation processes.
-o	Integrates with other Azure services to schedule and trigger data processing jobs.
+    Orchestrates and automates the data movement and transformation processes.
+    Integrates with other Azure services to schedule and trigger data processing jobs.
 3.	Apache Airflow:
-o	Manages the workflow and scheduling of the ETL processes.
-o	Defines workflows using Directed Acyclic Graphs (DAGs) to ensure tasks are executed in the correct order.
+    Manages the workflow and scheduling of the ETL processes.
+    Defines workflows using Directed Acyclic Graphs (DAGs) to ensure tasks are executed in the correct order.
 4.	PySpark:
-o	Performs the core data processing and transformation tasks.
-o	Reads data from ADLS Gen2, transforms it, and prepares it for storage in Azure Synapse Analytics.
+    Performs the core data processing and transformation tasks.
+    Reads data from ADLS Gen2, transforms it, and prepares it for storage in Azure Synapse Analytics.
 5.	Azure Synapse Analytics:
-o	Serves as the final destination for the processed data.
-o	Provides powerful querying and analytics capabilities to derive insights from the data.
+    Serves as the final destination for the processed data.
+    Provides powerful querying and analytics capabilities to derive insights from the data.
+
+**Data Flow**
+1.	Ingestion: Raw data is ingested into Azure Data Lake Storage Gen2.
+2.	Orchestration: Azure Data Factory triggers and orchestrates the data processing jobs.
+3.	Scheduling: Apache Airflow schedules and manages the execution of the PySpark jobs.
+4.	Processing: PySpark reads, transforms, and processes the raw data.
+5.	Storage: The processed data is stored in Azure Synapse Analytics for analysis and reporting.
+   
+**Project Structure**
+The project is organized into directories for configuration, DAGs, scripts, and source code, following best practices for code organization and maintainability. Configuration files store paths and settings, scripts automate setup and orchestration tasks, and source code handles data processing and transformation logic.
+
+**Usage**
+To set up and run the pipeline, follow the instructions provided in the README file. The setup involves configuring Azure resources, initializing Airflow, and running PySpark jobs. The processed data can be analyzed using Azure Synapse Analytics, providing valuable insights and supporting data-driven decision-making.
+
 
 
 ## Setup Instructions
@@ -85,3 +99,5 @@ This project is licensed under the MIT License.
 
 Contact
 If you have any questions or need further assistance, please contact omkudale9198@gmail.com
+
+
