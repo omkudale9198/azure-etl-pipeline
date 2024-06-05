@@ -1,4 +1,28 @@
+**Azure ETL Pipeline**
+
+The Azure ETL Pipeline project demonstrates a comprehensive data pipeline using various Azure services and open-source technologies. The pipeline processes raw data stored in Azure Data Lake Storage Gen2, orchestrates data movement and transformation using Azure Data Factory and Apache Airflow, processes the data with PySpark, and stores the processed data in Azure Synapse Analytics for further analysis.
+
+**Architecture Diagram**
+
 ![image](https://github.com/omkudale9198/azure-etl-pipeline/assets/68637380/93fa332c-2d3f-4b3a-90bd-ee1f0dfa683b)
+
+
+Key Components
+1.	Azure Data Lake Storage Gen2:
+o	Stores raw data files (e.g., CSV, JSON) which are the input for the pipeline.
+2.	Azure Data Factory (ADF):
+o	Orchestrates and automates the data movement and transformation processes.
+o	Integrates with other Azure services to schedule and trigger data processing jobs.
+3.	Apache Airflow:
+o	Manages the workflow and scheduling of the ETL processes.
+o	Defines workflows using Directed Acyclic Graphs (DAGs) to ensure tasks are executed in the correct order.
+4.	PySpark:
+o	Performs the core data processing and transformation tasks.
+o	Reads data from ADLS Gen2, transforms it, and prepares it for storage in Azure Synapse Analytics.
+5.	Azure Synapse Analytics:
+o	Serves as the final destination for the processed data.
+o	Provides powerful querying and analytics capabilities to derive insights from the data.
+
 
 ## Setup Instructions
 
